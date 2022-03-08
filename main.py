@@ -18,11 +18,17 @@ print("""
 print("Bienvenue dans StreetFighters LVIII 🕹")
 player_name = input("Choisissez votre pseudo : ")
 
+ADVERSAIRES = ["Ryu", "Ken", "Dhalsim", "Blanka", "Zangief"]
+for i in enumerate(ADVERSAIRES, 1):
+  print(f"{i}")
+ia_name = input("Choisissez votre adversaire : ")
+ia_name = ADVERSAIRES[int(ia_name)-1]
+
 player = Player(player_name, 100, 3, 1)
-ia = IA('Blanka', 100)
+ia = IA(ia_name, 100)
 
 print(f"Ok {player.get_name().upper()} ! 🔥\n{ia.get_name().upper()} sera votre adversaire 👹")
-print("=" * 40)
+print("=" * 50)
 print("""
     __    _____________ _____    _______       __    __ 
    / /   / ____/_  __( ) ___/   / ____(_)___ _/ /_  / /_
@@ -31,7 +37,7 @@ print("""
 /_____/_____/ /_/    /____/  /_/   /_/\__, /_/ /_/\__/  
                                      /____/             
 """)
-print("=" * 40)
+print("=" * 50)
 
 # FIGHT ⚔️
 
