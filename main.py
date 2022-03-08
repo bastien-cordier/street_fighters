@@ -27,7 +27,7 @@ ia_name = ADVERSAIRES[int(ia_name)-1]
 player = Player(player_name, 100, 3, 1)
 ia = IA(ia_name, 100)
 
-print(f"Ok {player.get_name().upper()} ! 🔥\n{ia.get_name().upper()} sera votre adversaire 👹")
+print(f"\nOk {player.get_name().upper()} ! 🔥\n{ia.get_name().upper()} sera votre adversaire 👹")
 print("=" * 50)
 print("""
     __    _____________ _____    _______       __    __ 
